@@ -1,0 +1,401 @@
+ 
+body {
+
+  background-color: #1A1A1A;
+
+  color: #cdcdcd;
+
+  font-family: 'Chilanka', sans-serif; /* some other cool style 'Arial', sans-serif */
+
+  margin: 2px;
+
+  margin-left: 4px;
+
+  adding: 0;
+
+  height: 100%;
+
+  font-size: 20px;
+
+  font-weight: bold;
+
+}
+
+.nav_bar {
+
+  display:  flex;
+
+  align-items: center;
+
+  font-size: 25px;
+
+  padding-left: 1rem;
+
+  gap: 40%;
+
+  padding-right: 1rem;
+
+  padding-top: 2.5rem;
+
+  padding-bottom: 2.5rem;
+
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+  justify-items: center;
+
+
+}
+
+.nav_link {
+
+  list-style: none;
+
+  display: flex;
+
+  gap: 90%;
+
+  
+}
+
+
+.sect1 {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding-top: 30px;
+
+  font-size: 70px;
+
+}
+
+.l {
+
+  margin: 100px;
+}
+
+.sect2 {
+
+  display: flex;
+
+  align-items: center;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding-top: 30px;
+
+  font-size: 40px;
+
+  justify-items: center;
+
+
+}
+
+.text-line {
+
+  font-size: 30px;
+}
+
+.ph {
+
+  font-size: 70px;
+}
+
+.sect3 {
+
+
+  display: flex;
+
+  align-items: center;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding-top: 30px;
+
+  font-size: 70px;
+
+
+}
+
+.grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+      gap: 20px;
+}
+
+.card {
+
+      background: #1F1F1F;
+
+      padding: 20px;
+
+      border-radius: 12px;
+
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+      transition: transform 0.2s ease;
+    }
+
+.card:hover {
+
+    transform: translateY(-5px);
+}
+
+.card h2 {
+
+    font-size: 0.8em;
+
+    margin-bottom: 10px;
+
+
+}
+
+.card p {
+
+  font-size: 0.45em;
+
+  color: white;
+
+  margin-bottom: 15px;
+
+  margin-left: 10px;
+
+}
+
+
+.card_btn {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 12px;
+
+
+  }
+
+.card_btn button {
+
+    border-radius: 7px;
+
+    width: 200px;
+
+    height: 40px;
+
+    font-size: 29px;
+
+
+
+    background-color: blueviolet;
+
+  }
+
+.card_btn a  {
+
+      color: black;
+}
+
+a {
+
+  text-decoration: none;
+
+
+}
+
+.more_project {
+
+  font-size: 40px;
+
+  padding-bottom: 10px;
+}
+
+footer {
+
+  background: #1C1C1C;
+
+  padding-right: 1rem;
+
+  padding-top: 2.5rem;
+
+  padding-bottom: 2.5rem;
+
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: space-around;
+
+  align-items: center;
+
+  align-content: center;
+
+  justify-items: center;
+
+
+}
+
+.sp {
+
+  font-size: 27px;
+
+  font-weight: bold;
+}
+
+.sl {
+
+  margin: 9px;
+}
+
+.contact a {
+
+  text-decoration: none;
+
+  color: blueviolet;
+}
+
+
+/* -------------------------------
+   Media Queries for Responsiveness
+---------------------------------- */
+
+@media (max-width: 1024px) {
+  .sect1 {
+    font-size: 50px;
+  }
+
+  .ph {
+    font-size: 50px;
+  }
+
+  .text-line {
+    font-size: 24px;
+  }
+
+  .l {
+    margin: 50px;
+  }
+
+  .card_btn button {
+    width: 180px;
+  }
+
+  .more_project {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+
+  .nav_bar {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 1rem;
+
+    gap: 0;
+  }
+
+  .nav_bar_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo {
+
+    font-size: 24px;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+  }
+
+  .nav_link {
+
+    display: none;
+
+    flex-direction: column;
+
+    align-items: flex-end; /* Align items to the right */
+
+    width: 100%;
+
+    padding-top: 1rem;
+
+    gap: 1rem;
+
+    padding-left: 1rem;
+  }
+
+  .nav_link.show {
+
+    display: flex;
+  }
+
+  .nav_link li {
+
+    padding-right: 1.5rem;
+
+    font-size: 20px;
+  }
+
+  .d {
+
+    padding-left: 1em;
+  }
+
+  .ph {
+
+    font-size: 35px;
+  }
+
+  .contact {
+
+    font-size: 25px;
+  }
+
+  footer {
+
+    flex-direction: column;
+  }
+
+  .sp {
+
+    font-size: 35px;
+  }
+
+  .sl {
+
+    font-size: 25px;
+  }
+
+}
