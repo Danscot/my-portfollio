@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="../dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .email {
+      background-color: transparent;
+      border: solid #3A3A3A 1px;
+      border-radius: 4px;
+      width: 100%;
+    }
+
+    .email:hover {
+      border: blueviolet solid;
+    }
+
+    .email:focus {
+      outline: none;
+      outline-color: blueviolet;
+      border: blueviolet;
+      color: blueviolet;
+    }
+
+    .marquee-container {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      padding: 20px 0;
+    }
+
+    .marquee {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 20s linear infinite;
+    }
+
+    .marquee-box {
+      display: inline-block;
+      width: 200px;
+      height: 150px;
+      margin: 0 10px;
+      background-color: #3A3A3A;
+      color: white;
+      text-align: center;
+      line-height: 150px;
+      border-radius: 8px;
+      font-size: 24px;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .marquee-box:hover {
+      transform: scale(1.1);
+      background-color: blueviolet;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .footer {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    .footer a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Burger menu styles */
+    .burger {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .burger {
+        display: block;
+        cursor: pointer;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .burger.active {
+        display: none;
+      }
+
+      .nav-links li:hover {
+        color: blueviolet;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-[#1c1c1c] text-gray-300 font-bold font-['chilanka']">
+  <header class="container mx-auto px-4 py-2 flex justify-between items-center shadow">
+    <div class="text-white-100 font-bold text-3xl cursor-pointer">Danscot</div>
+    <div class="burger md:hidden">
+      <div class="w-8 h-1 bg-white mb-1"></div>
+      <div class="w-8 h-1 bg-white mb-1"></div>
+      <div class="w-8 h-1 bg-white"></div>
+    </div>
+    <ul class="nav-links flex flex-row space-x-10 cursor-pointer md:flex md:items-center md:space-x-10">
+      <li class="text-white-100 font-bold text-2xl pt-1 hover:text-[blueviolet]"><a href="#about">About</a></li>
+      <li class="text-white-100 font-bold text-2xl pt-1 hover:text-[blueviolet]"><a href="#project">Project</a></li>
+      <li class="text-white-100 font-bold text-2xl pt-1 hover:text-[blueviolet]"><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <!--Intro Section -->
+  <section class="flex items-center justify-center py-[90px] px-4">
+    <p class="text-3xl md:text-6xl">
+      <span class="font-bold">&lt;Text&gt;</span><br><br>
+      <span class="pl-[80px]">Hi</span><br>
+      <span class="pl-[80px]">I'm Danscot</span><br>
+      <span class="pl-[80px]">Just another <span class="lg:pl-0 sm:text-6xl pl-[80px]">developer</span></span><br><br>
+      <span class="font-bold">&lt;/Text&gt;</span>
+    </p>
+  </section>
+
+  <!-- About Section -->
+  <section class="flex items-center justify-center py-[65px] px-4 text-center" id="about">
+    <div class="text-2xl">
+      <p class="text-3xl md:text-5xl flex justify-center py-10">
+        <span class="font-bold">&lt;Text&gt;</span><span class="font-bold text-line">About</span><span class="font-bold">&lt;/Text&gt;</span>
+      </p>
+      <p class="text-line">Welcome to my portfolio, I'm dedicated to creating innovative solutions for people over the internet.</p><br>
+      <p class="text-line">While building all these amazing projects, I have gained a lot of experience.</p><br>
+      <p class="text-line">I have a good knowledge of many amazing skills which are useful in the industry like frontend ( html, css and javascript ), backend ( Django framework ) development, Git environment, hosting web service, automations ( bot ).</p><br>
+    </div>
+  </section>
+
+  <!-- Marquee Project Section -->
+  <section class="py-10 px-4 " id="project">
+    <p class="text-3xl md:text-5xl flex justify-center py-10">
+      <span class="font-bold">&lt;Text&gt;</span><span class="font-bold text-line">Project</span><span class="font-bold">&lt;/Text&gt;</span>
+    </p>
+    <p class="text-2xl text-line text-center">Discover some of my projects below</p>
+    <div class="marquee-container">
+      <div class="marquee flex items-center justify-center">
+
+        <div class="marquee-box">Dshowcase</div>
+
+        <div class="marquee-box">WhatsApp Bot</div>
+
+        <div class="marquee-box">Downloader api</div>
+
+        <div class="marquee-box">Mytube Api</div>
+
+        <div class="marquee-box">Facebook login</div>
+
+        <div class="marquee-box">Paypal login</div>
+
+         <div class="marquee-box">Mp3 Converter</div>
+
+         <div class="marquee-box">Simple Blog</div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer flex flex-col md:flex-row justify-around width-10 text-center md:text-left" id="contact">
+    <div class="mb-6 md:mb-0">
+      <p class="font-bold text-2xl">Contact Information:</p>
+      <p>Email: <a href="mailto:scotfielddaniel@gmail.com">scotfielddaniel@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/danscot" target="_blank">https://github.com/danscot</a></p>
+    </div>
+    <div class="mb-6 md:mb-0">
+      <p class="font-bold text-2xl">Get notified on new projects</p>
+      <input type="email" name="email" placeholder="Enter your email" class="email mt-2 md:mt-0 w-full md:w-auto">
+    </div>
+    <div>
+      <p class="font-bold text-2xl">Follow Me</p>
+      <a href="https://x.com/Danscot_007" target="_blank" class="hover:text-blue-500">
+        <i class="fab fa-twitter fa-2x"></i>
+      </a>
+      <a href="https://discord.gg/danscot" target="_blank" class="hover:text-blue-500 ml-4">
+        <i class="fab fa-discord fa-2x"></i>
+      </a>
+  </div>
+  </footer>
+
+  <script>
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links li');
+
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      burger.classList.toggle('active');
+    });
+
+    navItems.forEach(item => {
+      item.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        burger.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+
+</html>
