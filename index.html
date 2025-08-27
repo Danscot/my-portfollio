@@ -63,7 +63,6 @@
       0% {
         transform: translateX(0%);
       }
-
       100% {
         transform: translateX(-50%);
       }
@@ -118,21 +117,22 @@
 </head>
 
 <body class="bg-[#1c1c1c] text-gray-300 font-bold font-['chilanka']">
+  <!-- Header -->
   <header class="container mx-auto px-4 py-2 flex justify-between items-center shadow">
-    <div class="text-white-100 font-bold text-3xl cursor-pointer">Danscot</div>
+    <div class="text-white font-bold text-3xl cursor-pointer">Danscot</div>
     <div class="burger md:hidden">
       <div class="w-8 h-1 bg-white mb-1"></div>
       <div class="w-8 h-1 bg-white mb-1"></div>
       <div class="w-8 h-1 bg-white"></div>
     </div>
     <ul class="nav-links flex flex-row space-x-10 cursor-pointer md:flex md:items-center md:space-x-10">
-      <li class="text-white-100 font-bold text-2xl pt-1 hover:text-[blueviolet]"><a href="#about">About</a></li>
-      <li class="text-white-100 font-bold text-2xl pt-1 hover:text-[blueviolet]"><a href="#project">Project</a></li>
-      <li class="text-white-100 font-bold text-2xl pt-1 hover:text-[blueviolet]"><a href="#contact">Contact</a></li>
+      <li class="text-white font-bold text-2xl pt-1 hover:text-[blueviolet]"><a href="#about">About</a></li>
+      <li class="text-white font-bold text-2xl pt-1 hover:text-[blueviolet]"><a href="#project">Project</a></li>
+      <li class="text-white font-bold text-2xl pt-1 hover:text-[blueviolet]"><a href="#contact">Contact</a></li>
     </ul>
   </header>
 
-  <!--Intro Section -->
+  <!-- Intro Section -->
   <section class="flex items-center justify-center py-[90px] px-4">
     <p class="text-3xl md:text-6xl">
       <span class="font-bold">&lt;Text&gt;</span><br><br>
@@ -147,51 +147,44 @@
   <section class="flex items-center justify-center py-[65px] px-4 text-center" id="about">
     <div class="text-2xl">
       <p class="text-3xl md:text-5xl flex justify-center py-10">
-        <span class="font-bold">&lt;Text&gt;</span><span class="font-bold text-line">About</span><span class="font-bold">&lt;/Text&gt;</span>
+        <span class="font-bold">&lt;Text&gt;</span>
+        <span class="font-bold text-line">About</span>
+        <span class="font-bold">&lt;/Text&gt;</span>
       </p>
       <p class="text-line">Welcome to my portfolio, I'm dedicated to creating innovative solutions for people over the internet.</p><br>
       <p class="text-line">While building all these amazing projects, I have gained a lot of experience.</p><br>
-      <p class="text-line">I have a good knowledge of many amazing skills which are useful in the industry like frontend ( html, css and javascript ), backend ( Django framework ) development, Git environment, hosting web service, automations ( bot ).</p><br>
+      <p class="text-line">I have a good knowledge of many amazing skills which are useful in the industry like frontend (HTML, CSS, JavaScript), backend (Django framework), Git environment, hosting web service, automations (bots).</p><br>
     </div>
   </section>
 
-  <!-- Marquee Project Section -->
-  <section class="py-10 px-4 " id="project">
+  <!-- Project Section -->
+  <section class="py-10 px-4" id="project">
     <p class="text-3xl md:text-5xl flex justify-center py-10">
-      <span class="font-bold">&lt;Text&gt;</span><span class="font-bold text-line">Project</span><span class="font-bold">&lt;/Text&gt;</span>
+      <span class="font-bold">&lt;Text&gt;</span>
+      <span class="font-bold text-line">Project</span>
+      <span class="font-bold">&lt;/Text&gt;</span>
     </p>
     <p class="text-2xl text-line text-center">Discover some of my projects below</p>
     <div class="marquee-container">
       <div class="marquee flex items-center justify-center">
-
-        <div class="marquee-box">Dshowcase</div>
-
-        <div class="marquee-box">WhatsApp Bot</div>
-
-        <div class="marquee-box">Downloader api</div>
-
-        <div class="marquee-box">Mytube Api</div>
-
-        <div class="marquee-box">Facebook login</div>
-
-        <div class="marquee-box">Paypal login</div>
-
-         <div class="marquee-box">Mp3 Converter</div>
-
-         <div class="marquee-box">Simple Blog</div>
-
+        <a href="https://github.com/Danscot/dshowcase" target="_blank" rel="noopener noreferrer" class="marquee-box">Dshowcase</a>
+        <a href="https://github.com/Danscot/senku-xmd" class="marquee-box">WhatsApp Bot</a>
+        <a href="#" class="https://github.com/Danscot/downloader_api">Downloader API</a>
+        <a href="https://github.com/Danscot/mytube-api" class="marquee-box">Mytube API</a>
+        <a href="#" class="https://github.com/Danscot/fb_login">Facebook Login</a>
+        <a href="#" class="https://github.com/Danscot/Paypal_login_form">Paypal Login</a>
+        <a href="#" class="ithub.com/Danscot/Mp3_Converter">MP3 Converter</a>
+        <a href="https://github.com/Danscot/blog" class="marquee-box">Simple Blog</a>
       </div>
-
     </div>
-
   </section>
 
-  <!-- Footer Section -->
-  <footer class="footer flex flex-col md:flex-row justify-around width-10 text-center md:text-left" id="contact">
+  <!-- Footer -->
+  <footer class="footer flex flex-col md:flex-row justify-around text-center md:text-left" id="contact">
     <div class="mb-6 md:mb-0">
       <p class="font-bold text-2xl">Contact Information:</p>
       <p>Email: <a href="mailto:scotfielddaniel@gmail.com">scotfielddaniel@gmail.com</a></p>
-      <p>GitHub: <a href="https://github.com/danscot" target="_blank">https://github.com/danscot</a></p>
+      <p>GitHub: <a href="https://github.com/danscot" target="_blank">github.com/danscot</a></p>
     </div>
     <div class="mb-6 md:mb-0">
       <p class="font-bold text-2xl">Get notified on new projects</p>
@@ -205,7 +198,7 @@
       <a href="https://discord.gg/danscot" target="_blank" class="hover:text-blue-500 ml-4">
         <i class="fab fa-discord fa-2x"></i>
       </a>
-  </div>
+    </div>
   </footer>
 
   <script>
@@ -226,5 +219,4 @@
     });
   </script>
 </body>
-
 </html>
