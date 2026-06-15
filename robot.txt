@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://danscot.dev/sitemap.xml
+Sitemap: https://www.danscot.dev/sitemap.xml
